@@ -60,7 +60,7 @@ public class Enemyactivation : MonoBehaviour
             MovementWall.SetActive(false);
         }
     }
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter (Collider col)
     {
         if (col.gameObject.tag == Spawn && !HasActivatedSpawn)
         {
