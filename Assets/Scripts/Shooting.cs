@@ -7,10 +7,9 @@ public class Shooting : MonoBehaviour
     #region Bullets
     public GameObject bullet;
     Rigidbody body;
-    public float fuerzaDisparo = 0.1f;
+    public float fuerzaDisparo = 60f;
     float TotalCD = 0.3f;
     float CurrentCD;
-    public Transform bulletTransform;
     GameObject clon;
     #endregion
 
@@ -25,7 +24,7 @@ public class Shooting : MonoBehaviour
         {
             clon = Instantiate(bullet, transform.position, transform.rotation);
             body = clon.GetComponent<Rigidbody>();
-            body.AddForce(clon.transform.up * fuerzaDisparo, ForceMode.Impulse);
+            body.AddForce(clon.transform.forward * fuerzaDisparo, ForceMode.Impulse);
             Destroy(clon, 3);
             CurrentCD = TotalCD;
         }

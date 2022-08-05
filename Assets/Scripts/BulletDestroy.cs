@@ -10,7 +10,7 @@ public class BulletDestroy : MonoBehaviour
     private void Start()
     {
         body = gameObject.GetComponent<Rigidbody>();
-        body.velocity = transform.TransformDirection(Vector3.forward * velocidadDisparo);
+        //body.velocity = transform.TransformDirection(Vector3.forward * velocidadDisparo);
     }
     private void Update()
     {
