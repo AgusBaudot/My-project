@@ -127,4 +127,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d226e1d5e78214c9b7442ca7a01d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loot: {fileID: 5025648397354625242, guid: d8d9e8c79c23f464d9a8cf2e1c552027, type: 3}
+  loot: {fileID: 1028339344196337004, guid: 2a8508551b8a1594f82c2b5dfa9ce5ac, type: 3}
